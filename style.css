@@ -86,38 +86,38 @@ label {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: .5rem;
+    row-gap: 0.5rem;
     margin-bottom: 1rem;
 }
 .tip-label {
     background-color: var(--Very-dark-cyan);
     font-size: 1rem;
     width: 6rem;
-    padding: .25rem 0;
+    padding: 0.25rem 0;
     text-align: center;
     color: var(--Very-light-grayish-cyan);
     border-radius: 5px;
 }
-.tip-label:hover{
+.tip-label:hover {
     background-color: var(--Strong-cyan);
     color: var(--Dark-grayish-cyan);
 }
-.custom{
+.custom {
     display: block;
     background-color: var(--Very-light-grayish-cyan);
     color: var(--Dark-grayish-cyan);
     border: none;
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
     outline: none;
     font-family: "Space Mono", monospace;
 }
-.peopleAmount{
+.peopleAmount {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
 }
-.peopleAmount input{
+.peopleAmount input {
     background-color: var(--Very-light-grayish-cyan);
     border: none;
     text-align: right;
@@ -138,4 +138,46 @@ label {
     background-size: 0.75rem;
     left: 0.5rem;
     top: 1.7rem;
+}
+.results {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 20px;
+    padding: 1rem;
+    row-gap: 1rem;
+}
+.tip-text-container {
+    display: flex;
+    flex-direction: column;
+}
+.tipAmount-container,
+.total-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tipAmount-container h3,
+.total-container h3 {
+    font-size: .75rem;
+    color: var(--Very-light-grayish-cyan);
+}
+.tipAmount-container p,
+.total-container p {
+    font-size: 0.5rem;
+    color: var(--Grayish-cyan);
+}
+.tipAmount-container h2,
+.total-container h2 {
+    font-size: 1rem;
+    color: var(--Strong-cyan);
+}
+.results button{
+    border: none;
+    font-size: 1rem;
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    padding: .5rem;
+    font-weight: 700;
+    margin-top: .5rem;
 }
