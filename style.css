@@ -62,6 +62,7 @@ label {
     font-weight: 700;
     color: var(--Very-dark-cyan);
     font-family: "Space Mono", monospace;
+    outline: none;
 }
 .bill::before {
     content: "";
@@ -86,6 +87,7 @@ label {
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: .5rem;
+    margin-bottom: 1rem;
 }
 .tip-label {
     background-color: var(--Very-dark-cyan);
@@ -108,4 +110,32 @@ label {
     margin-bottom: .25rem;
     outline: none;
     font-family: "Space Mono", monospace;
+}
+.peopleAmount{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.peopleAmount input{
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    text-align: right;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 700;
+    color: var(--Very-dark-cyan);
+    font-family: "Space Mono", monospace;
+    outline: none;
+}
+.peopleAmount::before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 0.75rem;
+    left: 0.5rem;
+    top: 1.7rem;
 }
