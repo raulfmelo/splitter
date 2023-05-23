@@ -51,6 +51,7 @@ label {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 .bill input {
     background-color: var(--Very-light-grayish-cyan);
@@ -69,7 +70,42 @@ label {
     background-repeat: no-repeat;
     width: 1.5rem;
     height: 1.5rem;
-    background-size: .75rem;
-    left: .5rem;
+    background-size: 0.75rem;
+    left: 0.5rem;
     top: 1.7rem;
+}
+.tip-percentage {
+    display: flex;
+    flex-direction: column;
+}
+.tip {
+    display: none;
+}
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: .5rem;
+}
+.tip-label {
+    background-color: var(--Very-dark-cyan);
+    font-size: 1rem;
+    width: 6rem;
+    padding: .25rem 0;
+    text-align: center;
+    color: var(--Very-light-grayish-cyan);
+    border-radius: 5px;
+}
+.tip-label:hover{
+    background-color: var(--Strong-cyan);
+    color: var(--Dark-grayish-cyan);
+}
+.custom{
+    display: block;
+    background-color: var(--Very-light-grayish-cyan);
+    color: var(--Dark-grayish-cyan);
+    border: none;
+    margin-bottom: .25rem;
+    outline: none;
+    font-family: "Space Mono", monospace;
 }
