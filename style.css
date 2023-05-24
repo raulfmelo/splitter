@@ -97,8 +97,9 @@ label {
     text-align: center;
     color: var(--Very-light-grayish-cyan);
     border-radius: 5px;
+    letter-spacing: .2rem;
 }
-.tip-label:hover {
+.tip-label:active {
     background-color: var(--Strong-cyan);
     color: var(--Dark-grayish-cyan);
 }
@@ -180,4 +181,33 @@ label {
     padding: .5rem;
     font-weight: 700;
     margin-top: .5rem;
+}
+.disabled{
+    background-color: var(--Grayish-cyan);
+    color: var(--Light-grayish-cyan);
+    font-size: 1rem;
+    width: 6rem;
+    padding: 0.25rem 0;
+    text-align: center;
+    border-radius: 5px;
+}
+@media (min-width:380px){
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Grayish-cyan);
+    }
+    .app{
+        border: 10px solid var(--Strong-cyan);
+        border-radius: 20px;
+        width: 375px;
+        margin: auto;
+        box-sizing: content-box;
+        box-shadow: 5px 5px 20px var(--Very-dark-cyan);
+    }
+    .app-container{
+        border-radius: 20px;
+    }
 }
